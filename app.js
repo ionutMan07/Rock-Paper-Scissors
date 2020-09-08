@@ -11,7 +11,7 @@ var play = function () {
   if (computer === user) {
     return "It's a Tie";
   } else if (
-    (computer === "{Paper" && user === "Rock") ||
+    (computer === "Paper" && user === "Rock") ||
     (computer === "Rock" && user === "Scissors") ||
     (computer === "Scissors" && user === "Paper")
   ) {
