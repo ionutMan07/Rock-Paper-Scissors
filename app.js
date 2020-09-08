@@ -1,4 +1,4 @@
-var myArray = ["rock", "paper", "scissors"];
+var myArray = ["Rock", "Paper", "Scissors"];
 
 function pick(arr) {
   const idx = Math.floor(Math.random() * arr.length);
@@ -11,9 +11,9 @@ var play = function () {
   if (computer === user) {
     return "It's a Tie";
   } else if (
-    (computer === "paper" && user === "rock") ||
-    (computer === "rock" && user === "scissors") ||
-    (computer === "scissors" && user === "paper")
+    (computer === "{Paper" && user === "Rock") ||
+    (computer === "Rock" && user === "Scissors") ||
+    (computer === "Scissors" && user === "Paper")
   ) {
     return "Computer wins";
   } else {
