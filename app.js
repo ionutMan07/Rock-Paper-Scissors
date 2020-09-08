@@ -10,20 +10,16 @@ var user = pick(myArray);
 var play = function () {
   if (computer === user) {
     return "It's a Tie";
-  } else if (computer === "paper" && user === "rock") {
+  } else if (
+    (computer === "paper" && user === "rock") ||
+    (computer === "rock" && user === "scissors") ||
+    (computer === "scissors" && user === "paper")
+  ) {
     return "Computer wins";
-  } else if (computer === "paper" && user === "scissors") {
+  } else {
     return "User wins";
-  } else if (computer === "rock" && user === "paper") {
-    return "User wins";
-  } else if (computer === "rock" && user === "scissors") {
-    return "Computer wins";
-  } else if (computer === "scissors" && user === "rock") {
-    return "User wins";
-  } else if (computer === "scissors" && user === "paper") {
-    return " Computer wins";
   }
 };
-console.log("Computer chois: ", computer);
+console.log("Computer choice: ", computer);
 console.log("User choice: ", user);
 console.log(play());
